@@ -3,3 +3,10 @@ services:
   consul:
     image: hashicorp/consul:1.17
     network_mode: host
+  vault:
+    image: hashicorp/vault:1.15
+    network_mode: host
+    cap_add:
+      - IPC_LOCK
+    environment:
+      VAULT_DEV_ROOT_TOKEN_ID: root
