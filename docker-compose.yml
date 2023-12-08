@@ -10,3 +10,27 @@ services:
       - IPC_LOCK
     environment:
       VAULT_DEV_ROOT_TOKEN_ID: root
+  config-service:
+    image: xenedium/config-service
+    network_mode: host
+    restart: on-failure
+  billing-service:
+    image: xenedium/billing
+    network_mode: host
+    restart: on-failure
+  customer-service:
+    image: xenedium/customer-service
+    network_mode: host
+    restart: on-failure
+  gateway-service:
+    image: xenedium/gateway-service
+    network_mode: host
+    restart: on-failure
+  inventory-service:
+    image: xenedium/inventory-service
+    network_mode: host
+    restart: on-failure
+  order-service:
+    image: xenedium/order-service
+    network_mode: host
+    restart: on-failure
