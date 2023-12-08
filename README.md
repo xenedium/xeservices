@@ -14,7 +14,7 @@
 
 #### order details
 
-![order details](https://raw.githubusercontent.com/xenedium/xeservices/main/ss/order-details.png)
+![order details](https://raw.githubusercontent.com/xenedium/xeservices/main/ss/orders-details.png)
 
 #### Consul
 
